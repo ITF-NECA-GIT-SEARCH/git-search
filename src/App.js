@@ -1,7 +1,11 @@
 //import logo from './logo.svg';
 import './App.css';
+import CardList from './component/CardList';
+import Header from './component/Header';
+import Footer from './component/Footer';
+import Searchbox from './component/Searchbox';
 import users from './users.json'
-import Searchbox from'./Searchbox'
+import {useState} from 'react'
 function App() {  
   const[searchInput, setSearchInput] = useState('')
   const[searchuser, setSearchUser] = useState([])
@@ -17,13 +21,15 @@ function App() {
     setSearchUser([...filteredRobots])
     
   }
+
   return (
-    
+   
     <div>
       <Searchbox updateSearchInput = {updateSearchInput}/>
+      <CardList  users = {searchInput ? searchuser : users}/>
+      <Footer />
     </div>
-  )
+  );
 }
-  
 
 export default App;
