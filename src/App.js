@@ -1,11 +1,11 @@
 //import logo from './logo.svg';
 import './App.css';
 import CardList from './component/CardList';
+import Header from './component/Header';
 import Footer from './component/Footer';
 import Searchbox from './component/Searchbox';
 import users from './users.json'
 import {useState} from 'react'
-import Header from '../../src/component/Header';
 function App() {  
   const[searchInput, setSearchInput] = useState('')
   const[searchuser, setSearchUser] = useState([])
