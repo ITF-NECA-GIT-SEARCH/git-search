@@ -1,6 +1,6 @@
 import React from 'react'
 import './Searchbox.css'
-import search from '../search.png'
+import search from './search.png'
 
 function Searchbox({updateSearchInput}) {
   return (
