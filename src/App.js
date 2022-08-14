@@ -5,6 +5,7 @@ import Footer from './component/Footer';
 import Searchbox from './component/Searchbox';
 import users from './users.json'
 import {useState} from 'react'
+import Header from '../../src/component/Header';
 function App() {  
   const[searchInput, setSearchInput] = useState('')
   const[searchuser, setSearchUser] = useState([])
@@ -24,6 +25,7 @@ function App() {
   return (
    
     <div>
+      <Header />
       <Searchbox updateSearchInput = {updateSearchInput}/>
       <CardList  users = {searchInput ? searchuser : users}/>
       <Footer />
