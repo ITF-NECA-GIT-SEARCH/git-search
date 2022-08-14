@@ -1,7 +1,6 @@
 //import logo from './logo.svg';
 import './App.css';
 import CardList from './component/CardList';
-import Header from './component/Header';
 import Footer from './component/Footer';
 import Searchbox from './component/Searchbox';
 import users from './users.json'
